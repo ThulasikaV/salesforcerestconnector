@@ -67,19 +67,19 @@ public class SalesforceRestConnectorIntegrationTest extends ConnectorIntegration
     @Test(enabled = true, description = "salesforcerest {describeGlobal} integration test.")
     public void describeGlobal() throws IOException, JSONException {
 
-       // String methodName = "describeGlobal";
-        System.out.println("pass1");
-       // RestResponse<JSONObject> esbRestResponse = sendJsonRestRequest(getProxyServiceURL(methodName), "POST", esbRequestHeadersMap, "describeGlobal.json");
-       // System.out.println("pass2");
+        String methodName = "describeGlobal";
+
+        RestResponse<JSONObject> esbRestResponse = sendJsonRestRequest(getProxyServiceURL(methodName), "POST", esbRequestHeadersMap, "describeGlobal.json");
+
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/services/data/"+ connectorProperties.getProperty("apiVersion")+"/sobjects";
-        System.out.println("pass3");
+
 
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
-        System.out.println("pass4");
+
 
 
         //Assert.assertEquals(esbRestResponse.getBody().toString(), apiRestResponse.getBody().toString());
-        System.out.println("pass5");
+
     }
 
 
