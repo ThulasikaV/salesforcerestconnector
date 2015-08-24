@@ -9,7 +9,7 @@
             <property name="hostName" expression="json-eval($.hostName)"/>
             <property name="apiVersion" expression="json-eval($.apiVersion)"/>
             <property name="sobject" expression="json-eval($.sobject)"/>
-            <property name="rowValue" expression="json-eval($.rowvalue)"/>
+            <property name="rowId" expression="json-eval($.rowId)"/>
             <property name="fields" expression="json-eval($.fields)"/>
 
             <salesforcerest.getAccessTokenFromRefreshToken>
@@ -24,7 +24,7 @@
             <log category="INFO" level="full" separator=","/>
             <salesforcerest.retrieveFieldValues>
                 <sobject>{$ctx:sobject}</sobject>
-                <rowValue>{$ctx:rowValue}</rowValue>
+                <rowId>{$ctx:rowId}</rowId>
                 <fields>{$ctx:fields}</fields>
             </salesforcerest.retrieveFieldValues>
             <send/>

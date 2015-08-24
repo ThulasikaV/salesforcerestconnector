@@ -18,18 +18,19 @@
 <template name="delete" xmlns="http://ws.apache.org/ns/synapse">
     <parameter name="sobject"/>
     <parameter name="Id"/>
+    <parameter name="sObjectName" description="The value of the field of a particular sObject"/>
     <sequence>
         <property name="uri.var.sobject" expression="$func:sobject"/>
         <property name="uri.var.Id" expression="$func:Id"/>
+        <property name="uri.var.sObjectName" expression="$func:sObjectName"/>
         <payloadFactory media-type="json">
             <format>
                 {
-                "name": "$1"
+                $1
                 }
             </format>
             <args>
-                <arg expression="get-property('uri.var.sobject')"/>
-                <arg expression="get-property('uri.var.Id')"/>
+                <arg expression="get-property('uri.var.sObjectName')"/>
             </args>
         </payloadFactory>
         <call>

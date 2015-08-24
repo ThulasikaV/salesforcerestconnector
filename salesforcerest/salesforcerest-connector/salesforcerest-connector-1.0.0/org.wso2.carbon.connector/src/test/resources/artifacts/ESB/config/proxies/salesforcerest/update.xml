@@ -10,6 +10,8 @@
             <property name="apiVersion" expression="json-eval($.apiVersion)"/>
             <property name="sobject" expression="json-eval($.sobject)"/>
             <property name="Id" expression="json-eval($.Id)"/>
+            <property name="sObjectName" expression="json-eval($.sObjectName)"/>
+
 
             <salesforcerest.getAccessTokenFromRefreshToken>
                 <clientId>{$ctx:clientId}</clientId>
@@ -23,6 +25,7 @@
             <log category="INFO" level="full" separator=","/>
             <salesforcerest.update>
                 <sobject>{$ctx:sobject}</sobject>
+                <sObjectName>{$ctx:sObjectName}</sObjectName>
                 <Id>{$ctx:Id}</Id>
             </salesforcerest.update>
             <send/>

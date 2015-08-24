@@ -6,5 +6,7 @@
   "apiVersion": "%s(apiVersion)",
   "sobject": "%s(sobject)",
   "externalId":"%s(externalId)",
-  "field":"%s(field)"
+  "field":"%s(field)",
+  "apiUrl":"%s(apiUrl)",
+  "sObjectName":"%s(sObjectName)"
 }

@@ -5,5 +5,7 @@
   "hostName": "%s(hostName)",
   "apiVersion": "%s(apiVersion)",
   "sobject": "%s(sobject)",
-  "Id":"%s(Id)"
+  "Id":"%s(Id)",
+  "apiUrl":"%s(apiUrl)",
+  "sObjectName":"%s(sObjectName)"
 }

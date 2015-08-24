@@ -19,15 +19,6 @@
     <parameter name="searchString"/>
     <sequence>
         <property name="uri.var.searchString" expression="$func:searchString"/>
-        <payloadFactory media-type="json">
-            <format>
-                {
-                }
-            </format>
-            <args>
-                <arg expression="get-property('uri.var.searchString')"/>
-            </args>
-        </payloadFactory>
         <call>
             <endpoint>
                 <http method="get"

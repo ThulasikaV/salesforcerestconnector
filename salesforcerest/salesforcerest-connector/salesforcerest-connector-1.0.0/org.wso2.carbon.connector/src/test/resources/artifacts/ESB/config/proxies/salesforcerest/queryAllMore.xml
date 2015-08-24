@@ -8,7 +8,7 @@
             <property name="clientSecret" expression="json-eval($.clientSecret)"/>
             <property name="hostName" expression="json-eval($.hostName)"/>
             <property name="apiVersion" expression="json-eval($.apiVersion)"/>
-            <property name="nextRecordsUrl" expression="json-eval($.nextRecordsUrl)"
+            <property name="nextRecordsUrl" expression="json-eval($.nextRecordsUrl)"/>
 
             <salesforcerest.getAccessTokenFromRefreshToken>
                 <clientId>{$ctx:clientId}</clientId>

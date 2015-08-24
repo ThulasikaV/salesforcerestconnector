@@ -5,4 +5,5 @@
   "hostName": "%s(hostName)",
   "apiVersion": "%s(apiVersion)",
   "sobjectType": "%s(sobjectType)"
+  "apiUrl":"%s(apiUrl)"
 }

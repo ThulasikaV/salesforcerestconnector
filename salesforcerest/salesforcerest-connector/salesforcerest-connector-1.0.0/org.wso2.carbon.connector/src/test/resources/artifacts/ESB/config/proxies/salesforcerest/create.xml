@@ -21,20 +21,12 @@
                 <apiVersion>{$ctx:apiVersion}</apiVersion>
             </salesforcerest.init>
             <log category="INFO" level="full" separator=","/>
-            <payloadFactory media-type="json">
-                <format>
-                    {
-                    "Name":"$1"
-                    }
-                </format>
-                <args>
-                    <arg expression="get-property('sObjectName')"/>
-                </args>
-            </payloadFactory>
             <salesforcerest.create>
                 <sobject>{$ctx:sobject}</sobject>
+                <sObjectName>{$ctx:sObjectName}</sObjectName>
             </salesforcerest.create>
             <send/>
         </inSequence>
     </target>
+    <description/>
 </proxy>

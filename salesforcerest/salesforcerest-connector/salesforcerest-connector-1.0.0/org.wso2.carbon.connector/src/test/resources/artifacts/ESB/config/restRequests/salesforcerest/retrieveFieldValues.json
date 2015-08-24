@@ -5,6 +5,7 @@
   "hostName": "%s(hostName)",
   "apiVersion": "%s(apiVersion)",
   "sobject": "%s(sobject)",
-  "rowValue":"%s(rowValue)",
-  "fields":"%s(fields)"
+  "rowId":"%s(rowId)",
+  "fields":"%s(fields)",
+  "apiUrl":"%s(apiUrl)"
 }

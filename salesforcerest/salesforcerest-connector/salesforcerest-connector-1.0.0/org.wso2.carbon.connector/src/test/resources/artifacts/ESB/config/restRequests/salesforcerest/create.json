@@ -5,5 +5,10 @@
   "hostName":"%s(hostName)",
   "apiVersion":"%s(apiVersion)",
   "sobject":"%s(sobject)",
-  "sObjectName":"%s(sObjectName)"
+  "apiUrl":"%s(apiUrl)",
+  "format":"json",
+  "sObjectName":{
+    "name":"%s(name)",
+    "description":"%s(description)"
+  }
 }

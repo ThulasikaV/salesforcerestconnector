@@ -19,15 +19,20 @@
     <parameter name="sobject"/>
     <parameter name="externalId"/>
     <parameter name="field"/>
+    <parameter name="sObjectName"/>
     <sequence>
         <property name="uri.var.sobject" expression="$func:sobject"/>
         <property name="uri.var.externalId" expression="$func:externalId"/>
         <property name="uri.var.field" expression="$func:field"/>
+        <property name="uri.var.sObjectName" expression="$func:sObjectName"/>
         <payloadFactory media-type="json">
             <format>
-                {}
+                {
+                $1
+                }
             </format>
             <args>
+                <arg expression="get-property('uri.var.sObjectName')"/>
             </args>
         </payloadFactory>
         <call>

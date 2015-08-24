@@ -11,6 +11,7 @@
             <property name="sobject" expression="json-eval($.sobject)"/>
             <property name="externalId" expression="json-eval($.externalId)"/>
             <property name="field" expression="json-eval($.field)"/>
+            <property name="sObjectName" expression="json-eval($.sObjectName)"/>
 
             <salesforcerest.getAccessTokenFromRefreshToken>
                 <clientId>{$ctx:clientId}</clientId>
@@ -26,6 +27,7 @@
                 <sobject>{$ctx:sobject}</sobject>
                 <externalId>{$ctx:externalId}</externalId>
                 <field>{$ctx:field}</field>
+                <sObjectName>{$ctx:sObjectName}</sObjectName>
             </salesforcerest.upsert>
             <send/>
         </inSequence>

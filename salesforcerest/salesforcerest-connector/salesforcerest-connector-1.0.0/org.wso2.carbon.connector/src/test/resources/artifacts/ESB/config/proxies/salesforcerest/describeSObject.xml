@@ -21,7 +21,7 @@
             </salesforcerest.init>
             <log category="INFO" level="full" separator=","/>
             <salesforcerest.describeSObject>
-                <sobject>{ctx:sobject}</sobject>
+                <sobject>{$ctx:sobject}</sobject>
             </salesforcerest.describeSObject>
             <send/>
         </inSequence>

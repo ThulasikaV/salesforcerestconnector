@@ -17,16 +17,16 @@
 -->
 <template name="retrieveFieldValues" xmlns="http://ws.apache.org/ns/synapse">
     <parameter name="sobject"/>
-    <parameter name="rowValue"/>
+    <parameter name="rowId"/>
     <parameter name="fields" description="Needed field values separated by ,"/>
     <sequence>
         <property name="uri.var.sobject" expression="$func:sobject"/>
-        <property name="uri.var.rowValue" expression="$func:rowValue"/>
+        <property name="uri.var.rowId" expression="$func:rowId"/>
         <property name="uri.var.fields" expression="$func:fields"/>
         <call>
             <endpoint>
                 <http method="get"
-                      uri-template="{uri.var.salesforce.url}/services/data/{uri.var.apiVersion}/sobjects/{uri.var.sobject}/{uri.var.rowValue}?fields={uri.var.fields}" />
+                      uri-template="{uri.var.salesforce.url}/services/data/{uri.var.apiVersion}/sobjects/{uri.var.sobject}/{uri.var.rowId}?fields={uri.var.fields}" />
             </endpoint>
         </call>
     </sequence>
