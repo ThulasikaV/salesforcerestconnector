@@ -5,8 +5,11 @@
   "hostName": "%s(hostName)",
   "apiVersion": "%s(apiVersion)",
   "sobject": "%s(sobject)",
-  "externalId":"%s(externalId)",
+  "idToUpdate":"%s(idToUpdate)",
   "field":"%s(field)",
   "apiUrl":"%s(apiUrl)",
-  "sObjectName":"%s(sObjectName)"
+  "sObjectName": {
+    "name": "%s(name)",
+    "description":"%s(description)"
+  }
 }

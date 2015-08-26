@@ -30,10 +30,6 @@
             <file>searchResultLayout.xml</file>
             <description>Returns search result layout information for the objects in the query string</description>
         </component>
-        <component name="searchSuggestedRecords">
-            <file>searchSuggestedRecords.xml</file>
-            <description>Returns a list of suggested records whose names match the user’s search string</description>
-        </component>
     </subComponents>
 </component>
 

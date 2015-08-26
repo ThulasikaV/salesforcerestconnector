@@ -17,19 +17,16 @@
 -->
 <template name="upsert" xmlns="http://ws.apache.org/ns/synapse">
     <parameter name="sobject"/>
-    <parameter name="externalId"/>
-    <parameter name="field"/>
     <parameter name="sObjectName"/>
+    <parameter name="Id"/>
+
     <sequence>
         <property name="uri.var.sobject" expression="$func:sobject"/>
-        <property name="uri.var.externalId" expression="$func:externalId"/>
-        <property name="uri.var.field" expression="$func:field"/>
+        <property name="uri.var.Id" expression="$func:Id"/>
         <property name="uri.var.sObjectName" expression="$func:sObjectName"/>
         <payloadFactory media-type="json">
             <format>
-                {
                 $1
-                }
             </format>
             <args>
                 <arg expression="get-property('uri.var.sObjectName')"/>
@@ -38,7 +35,7 @@
         <call>
             <endpoint>
                 <http method="patch"
-                      uri-template="{uri.var.salesforce.url}/services/data/{uri.var.apiVersion}/sobjects/{uri.var.sobject}/{uri.var.field}/{uri.var.externalId}"/>
+                      uri-template="{uri.var.salesforce.url}/services/data/{uri.var.apiVersion}/sobjects/{uri.var.sobject}/{uri.var.Id}" />
             </endpoint>
         </call>
     </sequence>

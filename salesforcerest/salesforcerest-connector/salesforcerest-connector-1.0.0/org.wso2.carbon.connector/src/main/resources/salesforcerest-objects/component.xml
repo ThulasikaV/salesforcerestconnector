@@ -46,9 +46,5 @@
             <file>sObjectGetUpdated.xml</file>
             <decription>Retrieves the list of individual records that have been updated (added or changed) within the given timespan for the specified object</decription>
         </component>
-        <component name="sObjectRowsByExternalId">
-            <file>sObjectRowsByExternalId.xml</file>
-            <decription>Accesses records based on the specified object ID for External ID</decription>
-        </component>
     </subComponents>
 </component>

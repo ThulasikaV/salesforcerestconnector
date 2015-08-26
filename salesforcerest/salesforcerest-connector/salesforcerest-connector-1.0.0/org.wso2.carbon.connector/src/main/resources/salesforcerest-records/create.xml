@@ -23,9 +23,7 @@
         <property name="uri.var.sObjectName" expression="$func:sObjectName"/>
         <payloadFactory media-type="json">
             <format>
-                {
                 $1
-                }
             </format>
             <args>
                 <arg expression="get-property('uri.var.sObjectName')"/>

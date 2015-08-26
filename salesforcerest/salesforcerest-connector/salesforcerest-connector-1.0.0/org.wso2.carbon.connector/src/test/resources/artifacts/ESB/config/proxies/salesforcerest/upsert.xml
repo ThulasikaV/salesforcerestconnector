@@ -9,8 +9,7 @@
             <property name="hostName" expression="json-eval($.hostName)"/>
             <property name="apiVersion" expression="json-eval($.apiVersion)"/>
             <property name="sobject" expression="json-eval($.sobject)"/>
-            <property name="externalId" expression="json-eval($.externalId)"/>
-            <property name="field" expression="json-eval($.field)"/>
+            <property name="Id" expression="json-eval($.Id)"/>
             <property name="sObjectName" expression="json-eval($.sObjectName)"/>
 
             <salesforcerest.getAccessTokenFromRefreshToken>
@@ -25,8 +24,7 @@
             <log category="INFO" level="full" separator=","/>
             <salesforcerest.upsert>
                 <sobject>{$ctx:sobject}</sobject>
-                <externalId>{$ctx:externalId}</externalId>
-                <field>{$ctx:field}</field>
+                <Id>{$ctx:Id}</Id>
                 <sObjectName>{$ctx:sObjectName}</sObjectName>
             </salesforcerest.upsert>
             <send/>

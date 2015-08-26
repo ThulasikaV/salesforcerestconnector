@@ -26,7 +26,7 @@
         <call>
             <endpoint>
                 <http method="get"
-                      uri-template="{uri.var.salesforce.url}/services/data/{uri.var.apiVersion}/sobjects/{uri.var.sobject}/updated?start={uri.var.startTime}&amp;end={uri.var.endTime}" />
+                      uri-template="{uri.var.salesforce.url}/services/data/{uri.var.apiVersion}/sobjects/{uri.var.sobject}/updated/?start={uri.var.startTime}&amp;end={uri.var.endTime}" />
             </endpoint>
         </call>
     </sequence>

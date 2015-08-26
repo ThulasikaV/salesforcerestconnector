@@ -6,9 +6,9 @@
   "apiVersion":"%s(apiVersion)",
   "sobject":"%s(sobject)",
   "apiUrl":"%s(apiUrl)",
-  "format":"json",
-  "sObjectName":{
-    "name":"%s(name)",
+
+  "sObjectName": {
+    "name": "%s(name)",
     "description":"%s(description)"
   }
 }
