@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-   Copyright (c) 2005-2015, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+   Copyright (c) 2015, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
    WSO2 Inc. licenses this file to you under the Apache License,
    Version 2.0 (the "License"); you may not use this file except
    in compliance with the License.
@@ -31,14 +31,6 @@
         <property name="uri.var.clientAssertion" expression="$func:clientAssertion"/>
         <property name="uri.var.clientAssertionType" expression="$func:clientAssertionType"/>
         <property name="uri.var.hostName" expression="$func:hostName"/>
-        <!--<payloadFactory media-type="json">-->
-            <!--&lt;!&ndash;<format>&ndash;&gt;-->
-                <!--&lt;!&ndash;{&ndash;&gt;-->
-                <!--&lt;!&ndash;}&ndash;&gt;-->
-            <!--&lt;!&ndash;</format>&ndash;&gt;-->
-            <!--&lt;!&ndash;<args>&ndash;&gt;-->
-            <!--&lt;!&ndash;</args>&ndash;&gt;-->
-        <!--&lt;!&ndash;</payloadFactory>&ndash;&gt;-->
         <property name="FORCE_POST_PUT_NOBODY" value="true" scope="axis2" type="BOOLEAN"/>
         <call>
             <endpoint>
